@@ -1,7 +1,7 @@
 def turn_count(board)
-  board.each do |space|
+  board.each do |idx|
     numTurns = 0 
-    if(board[space] != " " || board[space] != nil || board[space] != "")
+    if(idx == "X" || idx == "O")
       numTurns += 1 
     end
   end
