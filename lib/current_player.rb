@@ -1,5 +1,5 @@
 def turn_count(board)
-  board.each |space| do
+  board.each do |space|
     numTurns = 0 
     if((board[space] == "X") || (board[space] == "O"))
       numTurns += 1 
